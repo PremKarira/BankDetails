@@ -1,23 +1,6 @@
 # BankDetails
 Employees storing bank details in the company database.
 
-Bankdetails API
-    api/bankdetails
-        get - full list of all bankdetails
-        post - add new bankdetail
-    api/bankdetails/id
-        get - get by id
-        delete - delete by id
-        *put - check if update allowed , if yes, save to update request
-    api/bankdetails/updates
-        get - get all update request
-        post- accept update
-    api/users
-        get - get all users
-        post - add new user (signup)
-    api/users/login
-        post - check email pass 
-
 ## API documentation
 
 _http://[site]:[port]/api/endpoints_
@@ -58,22 +41,28 @@ _http://[site]:[port]/api/endpoints_
 
 ## Signup & Login
 * Signup
-    - test
+    - signup as a first time user 
     <p align="center"><img src="https://github.com/PremKarira/BankDetails/blob/main/images/signup.png?raw=true"></p><br>
 
 * Login
-    - 
+    - entering details after signup
     <p align="center"><img src="https://github.com/PremKarira/BankDetails/blob/main/images/login.png?raw=true"></p><br>
 
 ## Three Cases
 * Case 1 : New User
-    - 
+    - First time login asks for bankdetails
     <p align="center"><img src="https://github.com/PremKarira/BankDetails/blob/main/images/newUser.png?raw=true"></p><br>
 
 * Case 2 : OLd user but can update details once
-    - 
-    <p align="center"><img src="https://github.com/PremKarira/BankDetails/blob/main/images/UpdateDeails.png?raw=true"></p><br>
+    - If bankdetails are already present, it asks for updated details
+    <p align="center"><img src="https://github.com/PremKarira/BankDetails/blob/main/images/UpdateDetails.png?raw=true"></p><br>
 
 * Case 3 : No updates allowed, so show details
-    - 
+    - if once update is already done, it just shows details
     <p align="center"><img src="https://github.com/PremKarira/BankDetails/blob/main/images/NoUpdatesAllowed.png?raw=true"></p><br>
+
+## Admin Panel
+* Login details
+    - email : admin
+    - password : admin
+    <p align="center"><img src="https://github.com/PremKarira/BankDetails/blob/main/images/AdminPanel.png?raw=true"></p><br>
