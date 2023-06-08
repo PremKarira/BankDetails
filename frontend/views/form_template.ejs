@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bank Details</title>
+  <link rel="stylesheet" type="text/css" href="/form.css">
+</head>
+
+<body>
+  <h1>Bank Details</h1>
+  <h2>Fill the details carefully</h2>
+  User email: <span id="user-email"></span><br><br>
+  <form id="add-neww">
+    <input type="hidden" name="email" placeholder="Email" value="" readonly>
+    <input type="text" name="account_holder_name" placeholder="Account Holder Name">
+    <input type="text" name="account_number" placeholder="Account Number">
+    <input type="text" name="ifsc_code" placeholder="IFSC Code">
+    <input type="text" name="bank_name" placeholder="Bank Name">
+    <input type="text" name="branch_name" placeholder="Branch Name">
+    <button onclick="addOrUpdate()">Submit</button>
+  </form>
+  
+  <div id="confirmation-message" style="display: none;"></div>
+  <script src="/form.js"></script>
+  <script>
+    // Set the value of email field from localStorage
+    const emailInput = document.querySelector('input[name="email"]');
+    const userEmailElement = document.getElementById('user-email');
+    const storedEmail = localStorage.getItem('email');
+    if (storedEmail) {
+      emailInput.value = storedEmail;
+      userEmailElement.textContent = storedEmail;
+    }
+  </script>
+</body>
+
+</html>

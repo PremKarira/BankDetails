@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Page</title>
+  <link rel="stylesheet" type="text/css" href="/admin.css">
+</head>
+<body>
+  <h1>Admin Page</h1>
+
+  <div id="user-list">
+    <h2>User List</h2>
+    <ul id="user-list-items"></ul>
+  </div>
+
+  <div id="bank-details">
+    <h2>Bank Details</h2>
+    <table id="bank-details-table">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Account Holder Name</th>
+          <th>Account Number</th>
+          <th>IFSC Code</th>
+          <th>Bank Name</th>
+          <th>Branch Name</th>
+        </tr>
+      </thead>
+      <tbody id="bank-details-body"></tbody>
+    </table>
+  </div>
+
+  <div id="update-requests">
+    <h2>Update Requests</h2>
+    <table id="update-requests-list">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Account Holder Name</th>
+          <th>Account Number</th>
+          <th>IFSC Code</th>
+          <th>Bank Name</th>
+          <th>Branch Name</th>
+          <th>Accept after call</th>
+        </tr>
+      </thead>
+      <tbody id="update-request-body"></tbody>
+    </table>
+  </div>
+
+  <script src="/admin.js"></script>
+</body>
+</html>
+

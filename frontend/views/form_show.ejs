@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bank Details</title>
+  <link rel="stylesheet" type="text/css" href="/form_show.css">
+</head>
+
+<body>
+  <h1>Bank Details</h1>
+
+  <div id="bank-details-container">
+    <h2>User Bank Details</h2>
+    <ul id="bank-details-list">
+      <li><span class="label">Email:</span> <span id="email"></span></li>
+      <li><span class="label">Account Holder Name:</span> <span id="account-holder-name"></span></li>
+      <li><span class="label">Account Number:</span> <span id="account-number"></span></li>
+      <li><span class="label">IFSC Code:</span> <span id="ifsc-code"></span></li>
+      <li><span class="label">Bank Name:</span> <span id="bank-name"></span></li>
+      <li><span class="label">Branch Name:</span> <span id="branch-name"></span></li>
+    </ul>
+    <p id="no-more-changes-msg">No more changes allowed.</p>
+  </div>
+
+  <script src="/form_show.js"></script>
+  <script>
+    const storedEmail = localStorage.getItem('email');
+    document.addEventListener('DOMContentLoaded', () => {
+      fill(storedEmail);
+    });
+    
+  </script>
+</body>
+
+</html>

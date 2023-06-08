@@ -1,7 +1,4 @@
-# BankDetails
-Employees storing bank details in the company database.
-
-Bankdetails API
+﻿Bankdetails API
     api/bankdetails
         get - full list of all bankdetails
         post - add new bankdetail
