@@ -63,17 +63,17 @@ _http://[site]:[port]/api/endpoints_
 
 * Login
     - 
-    <p align="center"><img src=""></p><br>
+    <p align="center"><img src="https://github.com/PremKarira/BankDetails/blob/main/images/login.png?raw=true"></p><br>
 
 ## Three Cases
 * Case 1 : New User
     - 
-    <p align="center"><img src=""></p><br>
+    <p align="center"><img src="https://github.com/PremKarira/BankDetails/blob/main/images/newUser.png?raw=true"></p><br>
 
 * Case 2 : OLd user but can update details once
     - 
-    <p align="center"><img src=""></p><br>
+    <p align="center"><img src="https://github.com/PremKarira/BankDetails/blob/main/images/UpdateDeails.png?raw=true"></p><br>
 
 * Case 3 : No updates allowed, so show details
     - 
-    <p align="center"><img src=""></p><br>
+    <p align="center"><img src="https://github.com/PremKarira/BankDetails/blob/main/images/NoUpdatesAllowed.png?raw=true"></p><br>
